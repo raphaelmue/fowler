@@ -62,6 +62,8 @@ class Customer {
                 if (each.getDaysRented() > 3)
                     thisAmount += (each.getDaysRented() - 3) * 1.5;
                 break;
+            default:
+                throw new IllegalArgumentException("Not allowed here");
         }
         return thisAmount;
     }
