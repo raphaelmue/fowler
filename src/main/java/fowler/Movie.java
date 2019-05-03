@@ -1,6 +1,6 @@
 package fowler;
 
-public class Movie {
+class Movie {
     static final int CHILDRENS = 2;
     static final int REGULAR = 0;
     static final int NEW_RELEASE = 1;
