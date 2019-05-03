@@ -1,18 +1,18 @@
 package fowler;
 
 public class Movie {
-    public static final int CHILDRENS = 2;
-    public static final int REGULAR = 0;
-    public static final int NEW_RELEASE = 1;
+    static final int CHILDRENS = 2;
+    static final int REGULAR = 0;
+    static final int NEW_RELEASE = 1;
     private String title;
     private int priceCode;
 
-    public Movie(String newtitle, int newpriceCode) {
+    Movie(String newtitle, int newpriceCode) {
         title = newtitle;
         priceCode = newpriceCode;
     }
 
-    public int getPriceCode() {
+    int getPriceCode() {
         return priceCode;
     }
 
@@ -20,9 +20,8 @@ public class Movie {
         priceCode = arg;
     }
 
-    public String getTitle() {
+    String getTitle() {
         return title;
     }
 
-    ;
 }
